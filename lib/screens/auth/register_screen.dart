@@ -43,8 +43,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
       if (mounted) setState(() => _isLoading = false);
 
     }
-
-
   }
 
   @override
