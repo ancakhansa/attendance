@@ -80,6 +80,12 @@ class FirestoreService {
 
       // create or update attendance record
       Future<void> saveAttendanceRecord(AttendanceRecord record) async {
-        
+        if (record.id == '1' || record.id.isEmpty) {
+          // new record for creating auto generated ID
+          await createAttendanceRecord(record);
+        } else {
+          // update existing record
+          
+        }
       }
 }
